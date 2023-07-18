@@ -1,72 +1,83 @@
 import { forwardRef } from 'react'
 import clsx from 'clsx'
+import imagelogo from '@/cometaImages/logos/comeee.png'
+import Image from 'next/image'
 
 function Logo(props) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      id="Capa_1"
-      data-name="Capa 1"
-      viewBox="0 0 883.45 297.59"
-      {...props}
-    >
-      <defs>
-        <clipPath id="clip-path" transform="translate(-512.5 -369.68)">
-          <path
-            d="M694.19 450.29c9.51 9.36 51.67 44.19 60.2 51.27 3.24 2.69.73 7.7-3.66 4-19.1-15.92-45.33-34.93-64.82-48.08-3.06-2.06-6.31.82-3.9 3.74 12.51 15.17 32.39 31.19 53.25 57.06a3 3 0 1 1-4.39 4c-20.92-20.19-53.41-50.6-56.46-53s-5.24.17-4.1 2c10.63 17.45 27.78 39.29 47 65.82 1.71 2.37-2.58 5.16-4.15 3.27-18.52-22.41-46-55.37-50.69-60.57-3.71-4.14-6.4-1.57-5.24 1.4.09.24.39.94.39.94L687 543.33s20.22 40.7 53.46 44.42c37.53 4.21 52.64-18.2 58.65-29.48 5.33-10 14.3-37.65-12.35-64.73-17.87-19-90-47.61-90-47.61a16.59 16.59 0 0 0-4.31-.93c-1.8 0-2.6 1 1.71 5.29"
-            className="cls-1"
-          />
-        </clipPath>
-        <style>{'.cls-1{fill:#fe7f04}'}</style>
-      </defs>
-      <title>{'COMETA'}</title>
-      <text
-        style={{
-          fontSize: '206.18px',
-          fontFamily: 'JumperPERSONALUSEONLY-Black,Jumper PERSONAL USE ONLY',
-          fontWeight: 800,
-          fill: '#fe7f04',
-        }}
-        transform="translate(0 224.59)"
-      >
-        <tspan xmlSpace="preserve">{'C  ME'}</tspan>
-        <tspan
-          x={612.95}
-          y={0}
-          style={{
-            letterSpacing: '-.04em',
-          }}
-        >
-          {'T'}
-        </tspan>
-        <tspan
-          x={727.79}
-          y={0}
-          style={{
-            letterSpacing: 0,
-          }}
-        >
-          {'A'}
-        </tspan>
-      </text>
-      <g
-        style={{
-          opacity: 0.9,
-        }}
-      >
-        <path
-          d="M181.69 80.61c9.51 9.36 51.67 44.19 60.2 51.27 3.24 2.69.73 7.7-3.66 4-19.1-15.92-45.33-34.93-64.82-48.08-3.06-2.06-6.31.82-3.9 3.74 12.51 15.17 32.39 31.19 53.25 57.06a3 3 0 1 1-4.39 4c-20.92-20.19-53.41-50.6-56.46-53s-5.24.17-4.1 2c10.63 17.45 27.78 39.29 47 65.82 1.71 2.37-2.58 5.16-4.15 3.27-18.52-22.41-46-55.37-50.69-60.57-3.71-4.14-6.4-1.57-5.24 1.4.09.24.39.94.39.94l29.38 61.19s20.22 40.7 53.46 44.42c37.53 4.21 52.64-18.2 58.65-29.48 5.33-10 14.3-37.65-12.35-64.73-17.87-19-90-47.61-90-47.61a16.59 16.59 0 0 0-4.31-.93c-1.8 0-2.6 1 1.71 5.29"
-          className="cls-1"
-        />
-        <path
-          d="m220.58 0 157.07 147.21-153.66 150.38-157.08-147.2L220.58 0z"
-          className="cls-1"
-          style={{
-            clipPath: 'url(#clip-path)',
-          }}
-        />
-      </g>
-    </svg>
+    <div {...props}>
+      <Image
+        src={imagelogo}
+        alt="Logo"
+        width={100}
+        height={50}
+        className="mb-10"
+      />
+    </div>
+    // <svg
+    //   xmlns="http://www.w3.org/2000/svg"
+    //   id="Capa_1"
+    //   data-name="Capa 1"
+    //   viewBox="0 0 883.45 297.59"
+    //   {...props}
+    // >
+    //   <defs>
+    //     <clipPath id="clip-path" transform="translate(-512.5 -369.68)">
+    //       <path
+    //         d="M694.19 450.29c9.51 9.36 51.67 44.19 60.2 51.27 3.24 2.69.73 7.7-3.66 4-19.1-15.92-45.33-34.93-64.82-48.08-3.06-2.06-6.31.82-3.9 3.74 12.51 15.17 32.39 31.19 53.25 57.06a3 3 0 1 1-4.39 4c-20.92-20.19-53.41-50.6-56.46-53s-5.24.17-4.1 2c10.63 17.45 27.78 39.29 47 65.82 1.71 2.37-2.58 5.16-4.15 3.27-18.52-22.41-46-55.37-50.69-60.57-3.71-4.14-6.4-1.57-5.24 1.4.09.24.39.94.39.94L687 543.33s20.22 40.7 53.46 44.42c37.53 4.21 52.64-18.2 58.65-29.48 5.33-10 14.3-37.65-12.35-64.73-17.87-19-90-47.61-90-47.61a16.59 16.59 0 0 0-4.31-.93c-1.8 0-2.6 1 1.71 5.29"
+    //         className="cls-1"
+    //       />
+    //     </clipPath>
+    //     <style>{'.cls-1{fill:#fe7f04}'}</style>
+    //   </defs>
+    //   <title>{'COMETA'}</title>
+    //   <text
+    //     style={{
+    //       fontSize: '206.18px',
+    //       fontFamily: 'JumperPERSONALUSEONLY-Black,Jumper PERSONAL USE ONLY',
+    //       fontWeight: 800,
+    //       fill: '#fe7f04',
+    //     }}
+    //     transform="translate(0 224.59)"
+    //   >
+    //     <tspan xmlSpace="preserve">{'C  ME'}</tspan>
+    //     <tspan
+    //       x={612.95}
+    //       y={0}
+    //       style={{
+    //         letterSpacing: '-.04em',
+    //       }}
+    //     >
+    //       {'T'}
+    //     </tspan>
+    //     <tspan
+    //       x={727.79}
+    //       y={0}
+    //       style={{
+    //         letterSpacing: 0,
+    //       }}
+    //     >
+    //       {'A'}
+    //     </tspan>
+    //   </text>
+    //   <g
+    //     style={{
+    //       opacity: 0.9,
+    //     }}
+    //   >
+    //     <path
+    //       d="M181.69 80.61c9.51 9.36 51.67 44.19 60.2 51.27 3.24 2.69.73 7.7-3.66 4-19.1-15.92-45.33-34.93-64.82-48.08-3.06-2.06-6.31.82-3.9 3.74 12.51 15.17 32.39 31.19 53.25 57.06a3 3 0 1 1-4.39 4c-20.92-20.19-53.41-50.6-56.46-53s-5.24.17-4.1 2c10.63 17.45 27.78 39.29 47 65.82 1.71 2.37-2.58 5.16-4.15 3.27-18.52-22.41-46-55.37-50.69-60.57-3.71-4.14-6.4-1.57-5.24 1.4.09.24.39.94.39.94l29.38 61.19s20.22 40.7 53.46 44.42c37.53 4.21 52.64-18.2 58.65-29.48 5.33-10 14.3-37.65-12.35-64.73-17.87-19-90-47.61-90-47.61a16.59 16.59 0 0 0-4.31-.93c-1.8 0-2.6 1 1.71 5.29"
+    //       className="cls-1"
+    //     />
+    //     <path
+    //       d="m220.58 0 157.07 147.21-153.66 150.38-157.08-147.2L220.58 0z"
+    //       className="cls-1"
+    //       style={{
+    //         clipPath: 'url(#clip-path)',
+    //       }}
+    //     />
+    //   </g>
+    // </svg>
     // <svg viewBox="0 0 79 24" fill="none" aria-hidden="true" {...props}>
     //   <path
     //     d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12ZM2.4 12a9.004 9.004 0 0 0 6.055 8.507c1.565.542 2.945-.85 2.945-2.507V6c0-1.657-1.38-3.049-2.945-2.507A9.004 9.004 0 0 0 2.4 12Z"
@@ -118,7 +129,8 @@ export function AppScreen({ children, className, ...props }) {
     <div className={clsx('flex flex-col', className)} {...props}>
       <div className="flex justify-between px-4 pt-4">
         <MenuIcon className="h-6 w-6 flex-none" />
-        <Logo className="h-6 flex-none" />
+        {/* <Logo className="h-6 flex-none" /> */}
+        <Logo className="h-10 w-20 flex-none" />
         <UserIcon className="h-6 w-6 flex-none" />
       </div>
       {children}
