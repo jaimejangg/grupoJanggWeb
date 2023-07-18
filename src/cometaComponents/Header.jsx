@@ -5,7 +5,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Button } from '@/components/Button'
 import { Container } from '@/cometaComponents/Container'
 import { Logo } from '@/cometaComponents/Logo'
+import imagelogo from '@/cometaImages/logos/come.jpg'
 import { NavLinks } from '@/cometaComponents/NavLinks'
+import Image from 'next/image'
 
 function MenuIcon(props) {
   return (
@@ -52,7 +54,8 @@ export function Header() {
         <Container className="relative z-50 flex justify-between py-8">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              {/* <Logo className="h-10 w-auto" /> */}
+              <Image src={imagelogo} alt="Logo" width={200} height={100} />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
