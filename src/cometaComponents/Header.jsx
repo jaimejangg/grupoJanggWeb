@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { Button } from '@/components/Button'
 import { Container } from '@/cometaComponents/Container'
 import { Logo } from '@/cometaComponents/Logo'
-import imagelogo from '@/cometaImages/logos/come.jpg'
+import imagelogo from '@/cometaImages/logos/comee.png'
 import { NavLinks } from '@/cometaComponents/NavLinks'
 import Image from 'next/image'
 
