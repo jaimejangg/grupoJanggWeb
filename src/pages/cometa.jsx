@@ -9,6 +9,7 @@ import { Hero } from '@/cometaComponents/Hero'
 import { PrimaryFeatures } from '@/cometaComponents/PrimaryFeatures'
 // import { Reviews } from '@/cometaComponents/Reviews'
 import { SecondaryFeatures } from '@/cometaComponents/SecondaryFeatures'
+import { Analytics } from '@vercel/analytics/react'
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Faqs />
       </main>
       <Footer />
+      <Analytics />
     </>
   )
 }
