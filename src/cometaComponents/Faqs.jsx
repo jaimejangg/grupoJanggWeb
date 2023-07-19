@@ -6,8 +6,7 @@ const faqs = [
   [
     {
       question: 'En que lugares esta disponible Cometa?',
-      answer:
-        'Por el momento solo estamos disponibles en Yahualica Jalisco Mexico',
+      answer: 'Proximamente disponible en Tepatitlan de Morelos, Mexico.',
     },
     {
       question: 'Cual es el horario en la app para hacer pedidos?',
