@@ -18,7 +18,7 @@ export default function Home() {
         <title>Cometa - Tu super en linea</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="Ordena tu comida en nuestra App, tu despensa o un servicio que necesitas, lo entregamos en tu domicilio o tu recoges en tienda."
         />
       </Head>
       <Header />
