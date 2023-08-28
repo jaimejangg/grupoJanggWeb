@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export function PlayStoreLink({ color = 'white' }) {
   return (
     <Link
-      href="#"
+      href="https://play.google.com/store/apps/details?id=com.cometa.ordering"
       aria-label="Descargala en Play Store"
       className={clsx(
         'rounded-lg transition-colors',

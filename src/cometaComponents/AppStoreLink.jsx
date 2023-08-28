@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export function AppStoreLink({ color = 'black' }) {
   return (
     <Link
-      href="#"
+      href="https://apps.apple.com/mx/app/cometa/id6450997706"
       aria-label="Descargala en App Store"
       className={clsx(
         'rounded-lg transition-colors',
